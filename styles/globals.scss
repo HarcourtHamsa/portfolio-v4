@@ -10,6 +10,7 @@ body {
 @font-face {
   font-family: "Rubik";
   src: url("../assets/fonts/Cascadia.ttf");
+  font-display: swap;
 }
 
 * {
@@ -32,12 +33,39 @@ header {
 
 main {
   width: 90vw;
-  margin: auto;
+  margin: 5em auto;
+  background-color: #161616;
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+  margin-top: 3em;
+  cursor: pointer;
+  transform: translateY(-250%);
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.dot:first-of-type {
+  background-color: #009900;
+}
+
+.dot:nth-of-type(2) {
+  background-color: orange;
 }
 
 @media only screen and (min-width: 700px) {
   main {
     width: 50vw;
+    border: 1px solid #cccccc2f;
+    padding: 12px 25px;
+    border-radius: 10px;
   }
 }
 
@@ -80,8 +108,9 @@ summary {
   color: #cccccc;
 }
 
-.social-links{
+.social-links {
   display: flex;
   gap: 1em;
   margin-top: 1.5em;
 }
+

@@ -7,11 +7,19 @@ function index() {
   return (
     <div>
       <Head>
-        <title>Hamsa Harcourt</title>
+        <title>Harcourt Hamsa</title>
       </Head>
       <main>
+        <div className="dots">
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+        </div>
         <Navbar />
-        <h1>Hi, I&apos;m Harcourt Hamsa</h1>
+
+        <div className="glitch">
+          <h1 className="line">Hi, I&apos;m Harcourt Hamsa</h1>
+        </div>
         <p>
           I am a detail-oriented engineer with a flair for design and a deep
           commitment to writing high-quality, performant code.
