@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <header>
       <nav>
-        <Link href="/">Harcourt Hamsa</Link>
+        <Link href="/">{"<Harcourt Hamsa />"}</Link>
       </nav>
     </header>
   );

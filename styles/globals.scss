@@ -4,12 +4,13 @@ body {
   margin: 0;
   font-family: "Rubik", sans-serif;
   background-color: #161616;
+  // background-color: wheat;
   /* font-size: 18px; */
 }
 
 @font-face {
   font-family: "Rubik";
-  src: url("../assets/fonts/Cascadia.ttf");
+  src: url("../assets/fonts/JetBrainsMono-Light.ttf");
   font-display: swap;
 }
 
@@ -34,7 +35,7 @@ header {
 main {
   width: 90vw;
   margin: 5em auto;
-  background-color: #161616;
+  // background-color: #161616;
 }
 
 .dots {
@@ -63,9 +64,9 @@ main {
 @media only screen and (min-width: 700px) {
   main {
     width: 50vw;
-    border: 1px solid #cccccc2f;
-    padding: 12px 25px;
-    border-radius: 10px;
+    // border: 1px solid #cccccc2f;
+    padding: 0px 25px;
+    // border-radius: 10px;
   }
 }
 
@@ -81,6 +82,21 @@ h1 {
   font-size: clamp(1.5rem, 2.5vw, 4rem);
   margin-bottom: 1.8em;
   /* background-color: red; */
+}
+
+h2 {
+  color: #cccccc;
+  font-weight: normal;
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  margin-bottom: 1.2em;
+}
+
+h3 {
+  color: #cccccc;
+  font-weight: normal;
+  margin-bottom: 0em;
+  margin-top: 3em;
+  // text-decoration: underline;
 }
 
 a {
@@ -113,4 +129,3 @@ summary {
   gap: 1em;
   margin-top: 1.5em;
 }
-

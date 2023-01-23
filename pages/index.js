@@ -3,6 +3,8 @@ import Link from "next/link";
 import React from "react";
 import Navbar from "../components/Navbar";
 
+// import resumePDF from "../assets/Profile.pdf"
+
 function index() {
   return (
     <div>
@@ -10,11 +12,6 @@ function index() {
         <title>Harcourt Hamsa</title>
       </Head>
       <main>
-        <div className="dots">
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-        </div>
         <Navbar />
 
         <div className="glitch">
@@ -27,7 +24,8 @@ function index() {
         <p>
           I write articles about what I&apos;m learning and building on this
           blog—most of them about programming and technology. I also keep a{" "}
-          <Link href={"/"}>list of software projects</Link> I&apos;ve made.
+          <Link href={"/projects"}>list of software projects</Link> I&apos;ve
+          made.
         </p>
         <p>
           I&apos;ve been building web applications since 2019 having worked on
@@ -55,15 +53,25 @@ function index() {
           >
             [LinkedIn]
           </Link>
+          <Link
+            target={"_blank"}
+            href={
+              "https://drive.google.com/file/d/1stnZuzT0wq4UZmLzX6IG17P34j-426DL/view?usp=sharing"
+            }
+            rel="noopener noreferrer"
+          >
+            [Resumé]
+          </Link>
         </div>
 
-        <h4>--- Skills ---</h4>
+        <h4>Technologies I use</h4>
         <ul>
           <li>HTML / CSS</li>
           <li>JavaScript / TypeScript</li>
           <li>TailwindCSS / SCSS</li>
           <li>React.js / React Native</li>
           <li>Unit Tests</li>
+          <li>Cypress</li>
           <li>Node</li>
           <li>Express.js</li>
           <li>MongoDB</li>
@@ -71,7 +79,7 @@ function index() {
           <li>Heroku / Vercel / Netlify</li>
         </ul>
 
-        <h4>--- Writing ---</h4>
+        <h4>Writing</h4>
         <p>I try to write about technologies I find interesting.</p>
 
         <ul>
@@ -103,7 +111,7 @@ function index() {
           </li>
         </ul>
 
-        <h4>--- Contact ---</h4>
+        <h4>Contact Me</h4>
         <p>
           You can find me on Twitter at{" "}
           <Link href={"https://twitter.com/harcourt_hamsa"} target={"_blank"}>
